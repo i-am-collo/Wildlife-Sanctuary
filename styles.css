@@ -3,9 +3,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: white;
+    background-color: #f8f9fa;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .header {
     height: 200px;
     background: orange;
@@ -15,27 +19,34 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
+    width: 100%;
 }
+
 .nav {
     background: orange;
     color: white;
     padding: 10px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
+
 .nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
+
 .nav a:hover {
     background: white;
     color: orange;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -44,34 +55,56 @@ body {
     min-width: 150px;
     text-align: left;
 }
+
 .dropdown-content a {
     color: black;
     padding: 10px;
     display: block;
     text-decoration: none;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
 .content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    width: 100%;
 }
+
 .image img {
-    width: 490px;
-    height: 735px;
+    width: 350px;
+    height: auto;
     border-radius: 10px;
+    margin-right: 20px;
 }
+
 .text {
-    width: 50%;
+    flex: 1;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.6;
 }
+
 .footer {
+    text-align: center;
     background: orange;
     color: white;
     padding: 10px;
     margin-top: 20px;
+    width: 100%;
 }
